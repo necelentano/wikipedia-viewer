@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu|Ubuntu+Mono');
+
+body {
+    background-color: #e6eaf2;
+    overflow-y: scroll;
+}
+.wrapper {
+    width: 500px;
+    height: 90px;
+    margin: 15% auto 30px;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    margin: 50px 0 20px;
+}
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    opacity: 0.9;
+   
+}
+
+#search_area {
+    position: relative;
+    width: 50px;
+    margin: 0 auto;
+}
+
+#search_area input {
+    font-family: 'Ubuntu Mono', monospace;
+    border: 1px solid #ccc;
+    padding-left: 14px;
+    font-size: 24px;
+    line-height: 0;
+    color: #505d77;
+    border-radius: 10px;
+    height: 56px;
+    width: 28px;
+    position: absolute;
+    right: 0;
+}
+input::placeholder {
+    color: #c7d2e8;
+}
+button:focus,
+#search_area input:focus {
+  outline: none;
+}
+#search_area button {
+    position: absolute;
+    right: 0px;
+    height: 60px;
+    width: 62px;
+    border-radius: 10px;
+    border: 0px none;
+    background: #ccc;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+#search_area button.active {
+    border-radius: 0 10px 10px 0;
+
+}
+a {
+    display: block;
+    width:80%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color: #333;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 0 auto 10px;
+    background-color: #fff;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+a:hover {
+    background-color: #eff4ff;
+}
+a span.item_h {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+.rng {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+    background-color: #e6eaf2;
+}
+.rng:hover {
+    background-color: #e6eaf2;
+}
+
+
+/*Media Query*/
+@media (max-width: 421px) {
+    h1 {
+        font-size: 26px;
+        
+    }
+    h2 {
+        font-size: 24px;
+        
+    }
+    .rng {
+        font-size: 20px;
+    }
+    .wrapper {
+        width: 310px;
+        height: 120px;
+    }
+    .item_wrapper:first-child {
+        margin-top: 20px;
+    }
+    a span.item_h {
+        font-size: 20px;
+    }
+    a span.item_desc {
+        font-size: 16px;
+    }
+    
+}

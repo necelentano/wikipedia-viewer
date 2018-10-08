@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Wikipedia Viewer App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1><i class="em em-books"></i> Wikipedia Viewer <i class="em em-book"></i></h1>
+	<h2><i class="fa fa-free-code-camp"></i> FreeCodeCamp <i class="fa fa-thumbs-o-up"></i>&ensp; Project</h2>
+	<div class="wrapper">
+		<a class="rng" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random article</a>
+		<div id="search_area">
+			<form>
+				<input type="text" placeholder="Type here ...">
+				<button>
+					<i class="fa fa-search"></i>
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="item_wrapper"></div>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
